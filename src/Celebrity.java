@@ -16,8 +16,9 @@ public class Celebrity {
 
 	/**
 	 * Creates a Celebrity instance with the supplied answer and clue
-	 * @param answer  the answer (name of celebrity)
-	 * @param clue  the clue
+	 *
+	 * @param answer the answer (name of celebrity)
+	 * @param clue   the clue
 	 */
 	public Celebrity(String answer, String clue) {
 		this.clue = clue;
@@ -26,6 +27,7 @@ public class Celebrity {
 
 	/**
 	 * Supplies the clue for the celebrity
+	 *
 	 * @return
 	 */
 	public String getClue() {
@@ -34,6 +36,7 @@ public class Celebrity {
 
 	/**
 	 * Supplies the answer for the celebrity.
+	 *
 	 * @return
 	 */
 	public String getAnswer() {
@@ -42,6 +45,7 @@ public class Celebrity {
 
 	/**
 	 * Updates the clue to the provided String.
+	 *
 	 * @param newClue The new clue.
 	 */
 	public void setClue(String newClue) {
@@ -50,9 +54,17 @@ public class Celebrity {
 
 	/**
 	 * Updates the answer to the provided String.
+	 *
 	 * @param newAnswer The new answer.
 	 */
 	public void setAnswer(String newAnswer) {
 		answer = newAnswer;
 	}
+
+	@Override
+	public String toString() {
+		return "The celebrity's name is " + answer + ". The clue for this celebrity is " + clue;
+
+	}
 }
+
